@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { Coefficients } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export const getMathExplanation = async (coeffs: Coefficients): Promise<string> => {
   try {
